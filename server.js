@@ -6,22 +6,22 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.get('home', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+app.get('Home', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'Home.html'));
 });
 
 
-app.get('about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'about.html'));
+app.get('Experience', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'Experience.html'));
 });
 
 
-app.get('projects', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'project.html'));
+app.get('Projects', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'Project.html'));
 });
 
-app.get('contact', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+app.get('Contact', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'Contact.html'));
 });
 
 app.listen(3000, function () {
